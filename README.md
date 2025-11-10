@@ -33,5 +33,5 @@ For questions or issues, please contact:
 ## Citation:
 If you use this code, please cite the associated paper:  
 
-Moayedi, A., et al. *"Navigation Between Stopovers by Greater White-Fronted Geese: Comparing Compass Mechanisms and Efficiency Benchmarks", Movement Ecology (2026). DOI: [Pending]  
+Moayedi, A., et al. "Navigation Between Stopovers by Greater White-Fronted Geese: Comparing Compass Mechanisms and Efficiency Benchmarks", Movement Ecology (2026). DOI: [Pending]  
 
