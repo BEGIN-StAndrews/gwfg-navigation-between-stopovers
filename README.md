@@ -1,4 +1,5 @@
-# README: Navigation Between Stopovers by Greater White-Fronted Geese - Code & Workflow
+# Navigation Between Stopovers by Greater White-Fronted Geese (Code & Workflow)
+
 
 ## Overview:
 This repository contains the analysis code and workflow for the study "Navigation Between Stopovers by Greater White-Fronted Geese: Comparing Compass Mechanisms and Efficiency Benchmarks". It covers the full pipeline from GPS preprocessing and quality control, through stopover detection and segment construction, to modelling and evaluating alternative navigation strategies. We implement five compass-based routes: geographic loxodrome (GEO), geomagnetic loxodrome (MAG), magnetoclinic (MCL), time-compensated sun compass (SUN), and local wind-aligned (LW); and two efficiency benchmarks: great-circle (GC) and global wind-optimal (GWO); then compare simulated routes against observed tracks using multiple similarity metrics.
@@ -16,6 +17,7 @@ This repository contains the analysis code and workflow for the study "Navigatio
 - Add Covariates & Route Labels (14_1-14_3)
 - Modelling & Repeatability (15_1-15_4)
 - Mapping (16_1-16_2)
+- Supplementary Segment Summaries & Figures (17)
 
 ## Data availability:
 - **Observed GPS tracks:** Access may be restricted; final availability and conditions will be stated in the manuscript's Data Availability section after publication.  
