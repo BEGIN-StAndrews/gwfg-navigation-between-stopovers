@@ -1,39 +1,51 @@
-# Navigation Between Stopovers by Greater White-Fronted Geese (Code & Workflow)
+## Navigation Between Stopovers by Greater White-fronted Geese
 
+*Code and workflow for route-simulation and navigation-mechanism analysis*
 
-## Overview:
-This repository contains the analysis code and workflow for the study "Navigation Between Stopovers by Greater White-Fronted Geese: Comparing Compass Mechanisms and Efficiency Benchmarks". It covers the full pipeline from GPS preprocessing and quality control, through stopover detection and segment construction, to modelling and evaluating alternative navigation strategies. We implement five compass-based routes: geographic loxodrome (GEO), geomagnetic loxodrome (MAG), magnetoclinic (MCL), time-compensated sun compass (SUN), and local wind-aligned (LW); and two efficiency benchmarks: great-circle (GC) and global wind-optimal (GWO); then compare simulated routes against observed tracks using multiple similarity metrics.
+---
 
-## Workflow (run in sequence)
-- Preprocess GPS (01)
-- Stopovers (02)
-- Segmentation & Filtering (03-04)
-- Kp & Initial Heading (05-06)
-- Geomagnetic Corridors (07_1-07_2)
-- Hourly Resample & Kinematics (08)
-- Route Simulations (09_1-09_5)
-- Route Similarity Measures (10_1-10_2)
-- Evaluation Figures (11-13)
-- Add Covariates & Route Labels (14_1-14_3)
-- Modelling & Repeatability (15_1-15_4)
-- Mapping (16_1-16_2)
-- Supplementary Segment Summaries & Figures (17)
+## Overview
 
-## Data availability:
-- **Observed GPS tracks:** Access may be restricted; final availability and conditions will be stated in the manuscript's Data Availability section after publication.  
-- **External datasets:**  
-  - **ERA5 hourly wind (u100, v100):** Copernicus Climate Data Store, DOI: 10.24381/cds.adbb2d47.  
-  - **Geomagnetic fields:** MagGeo outputs (declination, inclination); details in the manuscript.
+This repository contains the analysis code and workflow for a study of route choice and orientation mechanisms in migratory greater white-fronted geese. The workflow links GPS preprocessing, stopover detection, route-segment construction, route simulation, route-similarity analysis, statistical modelling, and mapping outputs.
 
-## Contact:
-For questions or issues, please contact:
-- Ali Moayedi
-- University of St Andrews, UK
-- Email: am636@st-andrews.ac.uk
+The associated manuscript is provisionally titled:
 
+> **What can analysis of routes between stopovers reveal about orientation mechanisms in a long-distance migratory bird?**
 
-## Citation:
-If you use this code, please cite the associated paper:  
+The analysis compares observed routes between stopovers with simulated routes generated from compass-based orientation mechanisms and efficiency benchmarks. Compass-based routes include geographic loxodrome (GEO), geomagnetic loxodrome (MAG), magnetoclinic (MCL), time-compensated sun compass (SUN), and local wind-aligned routes (LW). Efficiency benchmarks include great-circle routes (GC) and global wind-optimal routes (GWO).
 
-Moayedi, A., et al. "Navigation Between Stopovers by Greater White-Fronted Geese: Comparing Compass Mechanisms and Efficiency Benchmarks", Movement Ecology (2026). DOI: [Pending]  
+## Workflow
+
+The scripts are organised to be run in sequence:
+
+1. **GPS preprocessing** (`01`)
+2. **Stopover detection** (`02`)
+3. **Segmentation and filtering** (`03`–`04`)
+4. **Kp index and initial-heading extraction** (`05`–`06`)
+5. **Geomagnetic corridors** (`07_1`–`07_2`)
+6. **Hourly resampling and movement kinematics** (`08`)
+7. **Route simulations** (`09_1`–`09_5`)
+8. **Route-similarity measures** (`10_1`–`10_2`)
+9. **Evaluation figures** (`11`–`13`)
+10. **Covariates and route labels** (`14_1`–`14_3`)
+11. **Modelling and repeatability analysis** (`15_1`–`15_4`)
+12. **Mapping outputs** (`16_1`–`16_2`)
+
+## Data availability
+
+- **Observed GPS tracks:** Access may be restricted. Final availability and access conditions will be stated in the manuscript's Data Availability section after publication.
+- **ERA5 hourly wind data:** Copernicus Climate Data Store, DOI: `10.24381/cds.adbb2d47`.
+- **Geomagnetic fields:** Generated using MagGeo-derived geomagnetic variables; methodological details are provided in the associated manuscript.
+
+## Citation
+
+If you use this code or workflow, please cite the associated manuscript:
+
+Moayedi, A., Long, J. A., Kölzsch, A., Kruckenberg, H., Benítez-Páez, F., & Demšar, U. *What can analysis of routes between stopovers reveal about orientation mechanisms in a long-distance migratory bird?* DOI: Pending.
+
+## Contact
+
+Ali Moayedi  
+University of St Andrews, UK  
+am636@st-andrews.ac.uk
 
