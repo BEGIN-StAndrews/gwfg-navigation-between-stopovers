@@ -29,7 +29,7 @@ The scripts are organised to be run in sequence:
 9. **Evaluation figures** (`11`–`13`)
 10. **Covariates and route labels** (`14_1`–`14_3`)
 11. **Modelling and repeatability analysis** (`15_1`–`15_4`)
-12. **Mapping outputs** (`16_1`–`16_2`)
+12. **Mapping outputs** (`16_1`–`16_2`; `17`)
 
 ## Data availability
 
@@ -48,4 +48,3 @@ Moayedi, A., Long, J. A., Kölzsch, A., Kruckenberg, H., Benítez-Páez, F., & D
 Ali Moayedi  
 University of St Andrews, UK  
 am636@st-andrews.ac.uk
-
